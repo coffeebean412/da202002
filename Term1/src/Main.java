@@ -3,7 +3,7 @@ import java.util.Random;
 public class Main {
 	static void func(int n, int a, int b) {
 		int[] data = new int[n];
-		Random rand = new Random(1);
+		Random rand = new Random();
 		for(int i=0; i<n; i++) {
 			data[i] = rand.nextInt();
 			System.out.println((i+1)+"¹øÂ° ¼ö="+data[i]);
@@ -31,6 +31,8 @@ public class Main {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		func(n, a, b);
+		sc.close();
 	}
+	
 
 }
